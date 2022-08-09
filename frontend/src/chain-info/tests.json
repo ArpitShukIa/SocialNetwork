@@ -1,0 +1,64 @@
+{
+  "contracts": {
+    "SocialNetwork": "994655f3c8f17b3bfb7d00e0d92fc789b352a610"
+  },
+  "tests": {
+    "tests/test_social_network.py": {
+      "coverage": false,
+      "isolated": false,
+      "results": "..",
+      "sha1": "240266899228c32cbd2be453d3e64a4b5e94ddd6",
+      "txhash": [
+        "00721d7f799384752a7f1ee8fc84f087f0f7b6b1",
+        "30e3d9cf43108b57ab3f6dbf80369d69fe57c6ee",
+        "4b630f452fed174376ea156d5132a9e8e2de9f0f"
+      ]
+    }
+  },
+  "tx": {
+    "00721d7f799384752a7f1ee8fc84f087f0f7b6b1": {
+      "SocialNetwork": {
+        "0": [
+          [
+            0,
+            1
+          ],
+          [
+            10,
+            12
+          ],
+          [
+            11
+          ]
+        ]
+      }
+    },
+    "30e3d9cf43108b57ab3f6dbf80369d69fe57c6ee": {
+      "SocialNetwork": {
+        "0": [
+          [
+            0
+          ],
+          [
+            10,
+            11
+          ],
+          []
+        ]
+      }
+    },
+    "4b630f452fed174376ea156d5132a9e8e2de9f0f": {
+      "SocialNetwork": {
+        "0": [
+          [
+            6
+          ],
+          [
+            13
+          ],
+          []
+        ]
+      }
+    }
+  }
+}

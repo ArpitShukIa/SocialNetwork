@@ -42,6 +42,10 @@ def test_post_can_be_tipped(social_network):
     with pytest.raises(exceptions.VirtualMachineError):
         social_network.tipPost(99, {'from': tipper, 'value': tip_amount})
 
+    # Cannot tip own post
+    with pytest.raises(exceptions.VirtualMachineError):
+        social_network.tipPost(1, {'from': author, 'value': tip_amount})
+
     tx = social_network.tipPost(1, {'from': tipper, 'value': tip_amount})
 
     assert author.balance() == author_initial_balance + tip_amount

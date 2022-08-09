@@ -42,6 +42,8 @@ contract SocialNetwork {
         require(_id > 0 && _id <= postCount);
         // Fetch the post
         Post memory _post = posts[_id];
+        // Can't tip own post
+        require(_post.author != msg.sender);
         // Fetch the author
         address payable _author = _post.author;
         // Pay the author by sending them Ether
